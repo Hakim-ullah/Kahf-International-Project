@@ -1,0 +1,155 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     overflow-x: hidden;
+ }
+
+ p {
+     line-height: 28px;
+     font-size: 18px;
+ }
+
+ /* Section Styles */
+ .first-sec {
+     display: flex;
+     justify-content: space-around;
+     padding: 50px;
+     flex-wrap: wrap;
+ }
+
+ .first-sec>.div1>p {
+     max-width: 500px;
+     width: 100%;
+ }
+
+   .div2 img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+
+
+
+.first-sec {
+  padding: 50px 70px;
+}
+
+.second-sec {
+  padding: 20px;
+}
+
+.third-sec {
+  padding: 50px 20px;
+}
+
+
+ .first-sec>div {
+     margin-top: 50px;
+ }
+
+ .second-sec {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .third-sec {
+     display: flex;
+     justify-content: center;
+     padding: 50px;
+ }
+
+ input {
+     height: 40px;
+     width: 100%;
+     max-width: 600px;
+     text-indent: 10px;
+     font-size: 20px;
+ }
+
+ textarea {
+     width: 100%;
+     max-width: 600px;
+     height: 200px;
+     text-indent: 10px;
+ }
+
+ ::placeholder {
+     font-size: 18px;
+ }
+
+ form {
+     width: 100%;
+     max-width: 600px;
+ }
+
+ input[type="submit"] {
+     margin-top: 50px;
+     border-radius: 40px;
+     cursor: pointer;
+     background-color: rgba(15, 15, 190, 0.979);
+     color: white;
+     width: 100%;
+     max-width: 200px;
+ }
+
+ input[type="submit"]:hover {
+     background-color: blue;
+     transition: 0.5s;
+ }
+     
+   textarea{
+    font-size: 20px;
+   }
+
+
+
+ /* Responsive Styles */
+ @media (max-width: 768px) {
+     .first-sec {
+         padding: 20px;
+     }
+
+      
+      
+
+     input,
+     textarea {
+         font-size: 16px;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .first-sec {
+         padding: 30px;
+     }
+
+     .first-sec < .div2 {
+/*     
+        width: 100%;
+        max-width: 870px;
+        height: auto; */
+     
+     padding: 10px;
+    }
+
+     /* .first-sec > div > img {
+         padding: 10px;
+     } */
+
+
+     input,
+     textarea {
+         font-size: 14px;
+     }
+
+     input[type="submit"] {
+         width: 100%;
+         max-width: 150px;
+     }
+ }

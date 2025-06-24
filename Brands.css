@@ -1,0 +1,87 @@
+  /* flex.css */
+
+  /* Make sections flex containers */
+
+
+  .section-1,
+  .section-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+
+
+  .section-1>.div1 {
+    margin-top: 30px;
+  }
+
+  .section-2>.div3 {
+    margin-top: 45px;
+  }
+
+
+
+  .section-1>.div1>p,
+  .section-2>.div3>p {
+    font-size: 20px;
+  }
+
+
+  .section-1>.div2>img,
+  .section-2>.div4>img {
+    height: 400px;
+    width: 400px;
+  }
+
+  img {
+    height: 365px;
+    width: 365px;
+  }
+
+  .section-1 {
+    margin-top: 70px;
+  }
+
+  /* Style individual sections */
+  .div1,
+  .div3 {
+    flex-basis: 50%;
+    padding: 20px;
+  }
+
+  .div2,
+  .div4 {
+    /* flex-basis: 50%; */
+    padding: 20px;
+  }
+
+  /* Make images responsive */
+  .top-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  /* Media queries for smaller screens */
+  @media (max-width: 768px) {
+
+    .section-1,
+    .section-2 {
+      flex-direction: column;
+      flex-basis: 50%;
+    }
+
+    .div1,
+    .div2,
+    .div3,
+    .div4 {
+      flex-basis: 100%;
+    }
+  }
