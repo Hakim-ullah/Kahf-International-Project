@@ -1,0 +1,589 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     user-select: none;
+ }
+
+ body {
+     overflow-x: hidden;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ .top-img {
+     width: 100%;
+     height: auto;
+     display: block;
+ }
+
+ .first-sec {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: flex-start;
+     margin: 60px 20px;
+     position: relative;
+ }
+
+ .first-sec h1 {
+     width: 100%;
+     text-align: center;
+     font-size: 2.5rem;
+     margin-bottom: 30px;
+ }
+
+ .first-sec .div1 img {
+     width: 100%;
+     max-width: 450px;
+     height: 450px;
+     border-radius: 8px;
+ }
+
+ .first-sec .div1,
+ .first-sec .div2 {
+     flex: 1 1 300px;
+     margin: 20px;
+     max-width: 500px;
+ }
+
+ .first-sec .div2 p {
+     line-height: 1.6;
+     font-size: 1rem;
+     margin-bottom: 15px;
+ }
+
+ /* Responsive Styles */
+ @media (max-width: 768px) {
+     .first-sec {
+         margin-top: 40px;
+         flex-direction: column;
+         align-items: center;
+     }
+
+     .first-sec h1 {
+         font-size: 2rem;
+         margin-bottom: 20px;
+     }
+
+     .first-sec .div1,
+     .first-sec .div2 {
+         max-width: 90%;
+         text-align: center;
+     }
+
+     .first-sec .div2 p {
+         font-size: 0.95rem;
+         text-align: justify;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .first-sec h1 {
+         font-size: 1.8rem;
+     }
+
+     .first-sec .div2 p {
+         font-size: 0.9rem;
+     }
+ }
+
+
+
+ /* Thin line */
+ .timeline {
+     position: relative;
+     width: 200%;
+     padding: 50px 0;
+     height: 200px;
+     margin-top: 50px;
+ }
+
+ .timeline::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 50%;
+     /* Center line */
+     transform: translateX(-50%);
+     width: 4px;
+     height: 110%;
+     background-color: black;
+     /* Line color */
+ }
+
+ .timeline-item {
+     position: relative;
+     width: 100%;
+     text-align: center;
+     margin-bottom: 50px;
+ }
+
+ .circle {
+     position: relative;
+     background-color: green;
+     color: white;
+     border-radius: 50%;
+     width: 60px;
+     height: 60px;
+     line-height: 60px;
+     font-weight: bold;
+     margin: 0 auto;
+     z-index: 1;
+     margin-top: 3px;
+
+ }
+
+ .first-circle {
+     border: 5px solid black;
+     color: white;
+     border-radius: 50%;
+     width: 65px;
+     height: 65px;
+     line-height: 60px;
+     font-weight: bold;
+     margin: 0 auto;
+     z-index: 1;
+ }
+
+
+
+ /* Thin Line */
+ .timeline {
+     position: relative;
+     width: 100%;
+     padding: 50px 0;
+     height: 6900px;
+ }
+
+ .timeline::before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 50%;
+     /* Center line */
+     transform: translateX(-50%);
+     width: 4px;
+     height: 100%;
+     background-color: black;
+     /* Line color */
+ }
+
+ .timeline-item {
+     position: relative;
+     width: 100%;
+     text-align: center;
+     margin-bottom: 50px;
+ }
+
+ .circle {
+     position: relative;
+     background-color: green;
+     color: white;
+     border-radius: 50%;
+     width: 60px;
+     height: 60px;
+     line-height: 60px;
+     font-weight: bold;
+     margin: 0 auto;
+     z-index: 1;
+     margin-top: 3px;
+ }
+
+ .first-circle {
+     border: 5px solid black;
+     color: white;
+     border-radius: 50%;
+     width: 75px;
+     height: 75px;
+     line-height: 60px;
+     font-weight: bold;
+     margin: 0 auto;
+     z-index: 1;
+     position: absolute;
+     transform: translateX(40vw);
+     margin-top: 200px;
+     text-align: center;
+ }
+
+ .my1 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: 1px;
+ }
+
+
+
+
+ .woimg {
+     width: 300px;
+     height: 200px;
+ }
+
+ .wodiv {
+     height: 300px;
+     width: 300px;
+     background-color: #F9F9F9;
+     transform: translateX(53vw);
+ }
+
+
+ .wodiv1 {
+     position: absolute;
+     margin-top: 100px;
+     margin-left: -10px;
+ }
+
+ .wodiv>p {
+     color: #524c4c;
+     margin-left: 10px;
+     margin-right: 10px;
+ }
+
+
+ .my2 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: 350px;
+ }
+
+ .wodiv2 {
+     position: absolute;
+     margin-top: 450px;
+     margin-left: -380px;
+ }
+
+ .my3 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -495%;
+ }
+
+ .wodiv3 {
+     position: absolute;
+     margin-top: -487%;
+     margin-left: -10px;
+ }
+
+ .my4 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -463%;
+ }
+
+ .wodiv4 {
+     position: absolute;
+     margin-top: -455%;
+     margin-left: -375px;
+ }
+
+ .my5 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -425%;
+ }
+
+ .wodiv5 {
+     position: absolute;
+     margin-top: -417%;
+     margin-left: -10px;
+ }
+
+ .my6 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -387%;
+ }
+
+ .wodiv6 {
+     position: absolute;
+     margin-top: -379%;
+     margin-left: -375px;
+ }
+
+
+
+ .my7 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -349%;
+ }
+
+ .wodiv7 {
+     position: absolute;
+     margin-top: -341%;
+     margin-left: -10px;
+     z-index: 1;
+ }
+
+ .my8 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -311%;
+ }
+
+ .wodiv8 {
+     position: absolute;
+     margin-top: -303%;
+     margin-left: -375px;
+ }
+
+ .my9 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -273%;
+ }
+
+ .wodiv9 {
+     position: absolute;
+     margin-top: -265%;
+     margin-left: -10px;
+ }
+
+ .my10 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -235%;
+ }
+
+ .wodiv10 {
+     position: absolute;
+     margin-top: -227%;
+     margin-left: -375px;
+ }
+
+ .my11 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -197%;
+ }
+
+ .wodiv11 {
+     position: absolute;
+     margin-top: -189%;
+     margin-left: -10px;
+ }
+
+ .my12 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -159%;
+ }
+
+ .wodiv12 {
+     position: absolute;
+     margin-top: -151%;
+     margin-left: -375px;
+ }
+
+ .my13 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -121%;
+ }
+
+ .wodiv13 {
+     position: absolute;
+     margin-top: -113%;
+     margin-left: -10px;
+ }
+
+ .my14 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -83%;
+ }
+
+ .wodiv14 {
+     position: absolute;
+     margin-top: -75%;
+     margin-left: -375px;
+ }
+
+ .my15 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -45%;
+ }
+
+ .wodiv15 {
+     position: absolute;
+     margin-top: -37%;
+     margin-left: -10px;
+ }
+
+ .my16 {
+     position: absolute;
+     transform: translateX(47vw);
+     margin-top: -7%;
+ }
+
+ .wodiv16 {
+     position: absolute;
+     margin-top: 1%;
+     margin-left: -375px;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media (max-width: 768px) {
+
+     /* Move the thin line to the left */
+     .timeline::before {
+         left: 20px;
+         transform: none;
+     }
+
+     /* Center all circles */
+     .first-circle,
+     .circle {
+         position: relative !important;
+         left: 50% !important;
+         transform: translateX(-50%) !important;
+         margin-top: 20px !important;
+         margin-bottom: 10px !important;
+     }
+
+     /* Reset year marker positions */
+     .my1,
+     .my2,
+     .my3,
+     .my4,
+     .my5,
+     .my6,
+     .my7,
+     .my8,
+     .my9,
+     .my10,
+     .my11,
+     .my12,
+     .my13,
+     .my14,
+     .my15,
+     .my16 {
+         position: relative !important;
+         transform: none !important;
+         margin-top: 20px !important;
+         margin-left: 0 !important;
+     }
+
+     /* Reset wodiv positions and make them responsive */
+     .wodiv,
+     .wodiv1,
+     .wodiv2,
+     .wodiv3,
+     .wodiv4,
+     .wodiv5,
+     .wodiv6,
+     .wodiv7,
+     .wodiv8,
+     .wodiv9,
+     .wodiv10,
+     .wodiv11,
+     .wodiv12,
+     .wodiv13,
+     .wodiv14,
+     .wodiv15,
+     .wodiv16 {
+         position: relative !important;
+         margin: 10px auto !important;
+         transform: none !important;
+         width: 90% !important;
+         height: auto !important;
+         text-align: center;
+     }
+
+     /* Make all images responsive */
+     .woimg {
+         width: 100% !important;
+         height: auto !important;
+         display: block;
+         max-width: 100%;
+     }
+
+     .timeline {
+         height: auto !important;
+         padding: 0 10px;
+     }
+
+     h1 {
+         width: auto !important;
+         margin: 20px auto !important;
+         text-align: center !important;
+         padding: 0 10px;
+     }
+ }
+
+
+
+
+ @media (max-width: 768px) {
+     .timeline::before {
+         left: 20px;
+         transform: none;
+     }
+
+     .first-circle {
+         position: relative !important;
+         margin: 10px auto !important;
+         width: 75px !important;
+         height: 75px !important;
+         transform: none !important;
+         margin-top: 20px !important;
+         display: none;
+     }
+
+     .first-circle .circle {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         width: 60px !important;
+         height: 60px !important;
+         line-height: 60px !important;
+         transform: translate(-50%, -50%) !important;
+     }
+
+     /* Reset other positions */
+     .my1,
+     .my2,
+     .my3,
+     .my4,
+     .my5,
+     .my6,
+     .my7,
+     .my8,
+     .my9,
+     .my10,
+     .my11,
+     .my12,
+     .my13,
+     .my14,
+     .my15,
+     .my16 {
+         position: relative !important;
+         transform: none !important;
+         margin-top: 20px !important;
+         margin-left: 0 !important;
+     }
+ }
+
+
+ @media (max-width: 768px) {
+
+     /* Hide the vertical line for nested .timeline inside .timeline */
+     .timeline .timeline::before {
+         display: none;
+     }
+ }
